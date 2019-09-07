@@ -3,7 +3,7 @@ server:
 spring:
   application:
     name: eureka-security-server
-  security:
+  security: #配置SpringSecurity登录用户名和密码
     user:
       name: macro
       password: 123456
