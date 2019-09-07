@@ -1,0 +1,11 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    hostname: replica2
+  client:
+    serviceUrl:
+      defaultZone: http://replica1:8002/eureka/
