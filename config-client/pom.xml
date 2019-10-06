@@ -37,10 +37,10 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!--使用消息总线刷新配置时添加-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-bus-amqp</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

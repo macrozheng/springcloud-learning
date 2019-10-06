@@ -11,7 +11,7 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
-  rabbitmq:
+  rabbitmq: #rabbitmq相关配置
     host: localhost
     port: 5672
     username: guest

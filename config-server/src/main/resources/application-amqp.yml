@@ -11,7 +11,7 @@ spring:
           username: macro
           password: 123456
           clone-on-start: true # 开启启动时直接从git获取配置
-  rabbitmq:
+  rabbitmq: #rabbitmq相关配置
     host: localhost
     port: 5672
     username: guest
@@ -21,7 +21,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8001/eureka/
 management:
-  endpoints:
+  endpoints: #暴露bus刷新配置的端点
     web:
       exposure:
         include: 'bus-refresh'
