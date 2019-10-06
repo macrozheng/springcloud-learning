@@ -1,0 +1,13 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      profile: dev #启用配置后缀名称
+      label: dev #分支名称
+      uri: http://localhost:8905 #配置中心地址
+      name: config #配置文件名称
+      username: macro
+      password: 123456
