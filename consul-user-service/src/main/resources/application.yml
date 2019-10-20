@@ -1,0 +1,11 @@
+server:
+  port: 8206
+spring:
+  application:
+    name: consul-user-service
+  cloud:
+    consul: #Consul服务注册发现配置
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}

@@ -1,0 +1,13 @@
+server:
+  port: 8308
+spring:
+  application:
+    name: consul-ribbon-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+service-url:
+  consul-user-service: http://consul-user-service
