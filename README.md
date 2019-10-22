@@ -19,6 +19,9 @@
 - [Hystrix Dashboard：断路器执行监控](https://juejin.im/post/5d88cb58f265da03e4679eff)
 - [Spring Cloud OpenFeign：基于Ribbon和Hystrix的声明式服务调用](https://juejin.im/post/5d9c85c3e51d45782c23fab6)
 - [Spring Cloud Zuul：API网关服务](https://juejin.im/post/5d9f2dea6fb9a04e3e724067)
+- [Spring Cloud Config：外部集中化配置管理](https://juejin.im/post/5da4709af265da5baa5b06ac)
+- [Spring Cloud Bus：消息总线](https://juejin.im/post/5da70d1351882509615bea34)
+- [Spring Cloud Sleuth：分布式请求链路跟踪](https://juejin.im/post/5dadb4d36fb9a04e02409a7d)
 
 ## 项目结构
 
@@ -33,7 +36,10 @@ springcloud-learning
 ├── turbine-service -- 聚合收集hystrix实例监控信息的服务
 ├── hystrix-dashboard -- 展示hystrix实例监控信息的仪表盘
 ├── feign-service -- feign服务调用测试服务
-└── zuul-proxy -- zuul作为网关的测试服务
+├── zuul-proxy -- zuul作为网关的测试服务
+├── config-server -- 配置中心服务
+├── config-security-server -- 带安全认证的配置中心服务
+└── config-client -- 获取配置的客户端服务
 ```
 
 ## 公众号
