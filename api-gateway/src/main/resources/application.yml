@@ -1,0 +1,12 @@
+server:
+  port: 9201
+service-url:
+  user-service: http://localhost:8201
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route #路由的ID
+          uri: ${service-url.user-service}/user/{id} #匹配后路由地址
+          predicates: # 断言，路径相匹配的进行路由
+            - Path=/user/{id}

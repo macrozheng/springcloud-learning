@@ -1,0 +1,24 @@
+server:
+  port: 9201
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: retry_test
+          uri: http://localhost:8201
+          predicates:
+            - Method=GET
+          filters:
+            - name: Retry
+              args:
+                retries: 1
+                statuses: BAD_GATEWAY
+                backoff:
+                  firstBackoff: 10ms
+                  maxBackoff: 50ms
+                  factor: 2
+                  basedOnPreviousValue: false
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
