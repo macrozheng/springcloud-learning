@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: admin-client
+server:
+  port: 9305
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  file: admin-client.log #添加开启admin的日志监控
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
