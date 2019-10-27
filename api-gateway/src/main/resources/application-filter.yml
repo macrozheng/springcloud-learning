@@ -1,24 +1,26 @@
 server:
   port: 9201
 spring:
+  redis:
+    host: localhost
+    port: 6379
   cloud:
     gateway:
       routes:
-        - id: retry_test
+        - id: retry_route
           uri: http://localhost:8201
           predicates:
             - Method=GET
           filters:
             - name: Retry
               args:
-                retries: 1
-                statuses: BAD_GATEWAY
+                retries: 1 #需要进行重试的次数
+                statuses: BAD_GATEWAY #返回哪个状态码需要进行重试，返回状态码为5XX进行重试
                 backoff:
                   firstBackoff: 10ms
                   maxBackoff: 50ms
                   factor: 2
                   basedOnPreviousValue: false
-
 logging:
   level:
     org.springframework.cloud.gateway: debug
