@@ -1,0 +1,5 @@
+server:
+  port: 9401
+spring:
+  application:
+    name: oauth2-service
