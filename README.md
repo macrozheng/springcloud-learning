@@ -25,6 +25,10 @@
 - [Spring Cloud Consul：服务治理与配置中心](https://juejin.im/post/5db05582f265da4d4c20180f)
 - [Spring Cloud Gateway：新一代API网关服务](https://juejin.im/post/5db6eed6518825644076d0b6)
 - [Spring Boot Admin：微服务应用监控](https://juejin.im/post/5db98a2d518825649c730f81)
+- [Spring Cloud Security：Oauth2使用入门](https://juejin.im/post/5dc013bae51d456e817cec30)
+- [Spring Cloud Security：Oauth2结合JWT使用](https://juejin.im/post/5dc2bec6f265da4d4f65bebe)
+- [Spring Cloud Security：Oauth2实现单点登录](https://juejin.im/post/5dc95a675188256e040db43f)
+- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
 
 ## 项目结构
 
@@ -49,7 +53,13 @@ springcloud-learning
 ├── api-gateway -- gateway作为网关的测试服务
 ├── admin-server -- admin监控中心服务
 ├── admin-client -- admin监控中心监控的应用服务
-└── admin-security-server -- 带登录认证的admin监控中心服务
+├── admin-security-server -- 带登录认证的admin监控中心服务
+├── oauth2-server -- oauth2认证测试服务
+├── oauth2-jwt-server -- 使用jwt的oauth2认证测试服务
+├── oauth2-client -- 单点登录的oauth2客户端服务
+├── nacos-config-client -- 用于演示nacos作为配置中心的nacos客户端
+├── nacos-user-service -- 注册到nacos的提供User对象CRUD接口的服务
+└── nacos-ribbon-service -- 注册到nacos的ribbon服务调用测试服务
 ```
 
 ## 公众号
