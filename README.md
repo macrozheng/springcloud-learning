@@ -9,7 +9,7 @@
 
 ## 简介
 
-一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7。20篇文章，篇篇精华，30个Demo，涵盖大部分应用场景。
+一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7。20篇文章，篇篇精华，31个Demo，涵盖大部分应用场景。
 
 ## 目录
 
@@ -32,7 +32,7 @@
 - [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
 - [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
 - [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
-- [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
+- [微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！](https://juejin.im/post/5f0affb6f265da231258a31d)
 
 ## 项目结构
 
@@ -67,7 +67,8 @@ springcloud-learning
 ├── sentinel-service -- sentinel功能测试服务
 ├── seata-order-service -- 整合了seata的订单服务
 ├── seata-storage-service -- 整合了seata的库存服务
-└── seata-account-service -- 整合了seata的账户服务
+├── seata-account-service -- 整合了seata的账户服务
+└── micro-oauth2 -- Gateway + Oauth2 实现统一认证和鉴权
 ```
 
 ## 公众号
