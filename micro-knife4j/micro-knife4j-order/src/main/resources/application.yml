@@ -1,0 +1,16 @@
+server:
+  port: 9601
+spring:
+  profiles:
+    active: dev
+  application:
+    name: micro-knife4j-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
