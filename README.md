@@ -9,7 +9,7 @@
 
 ## 简介
 
-一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7。20篇文章，篇篇精华，31个Demo，涵盖大部分应用场景。
+一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7。21篇文章，篇篇精华，32个Demo，涵盖大部分应用场景。
 
 ## 目录
 
@@ -33,6 +33,7 @@
 - [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
 - [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
 - [微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！](https://juejin.im/post/5f0affb6f265da231258a31d)
+- [微服务聚合Swagger文档，这波操作是真的香！](https://juejin.im/post/6854573219916201997)
 
 ## 项目结构
 
@@ -68,7 +69,8 @@ springcloud-learning
 ├── seata-order-service -- 整合了seata的订单服务
 ├── seata-storage-service -- 整合了seata的库存服务
 ├── seata-account-service -- 整合了seata的账户服务
-└── micro-oauth2 -- Gateway + Oauth2 实现统一认证和鉴权
+├── micro-oauth2 -- Gateway + Oauth2 实现统一认证和鉴权
+└── micro-knife4j -- Gateway + Knife4j聚合API文档
 ```
 
 ## 公众号
