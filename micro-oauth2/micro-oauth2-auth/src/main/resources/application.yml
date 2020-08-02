@@ -15,7 +15,7 @@ spring:
     database: 0
     port: 6379
     host: localhost
-    password:
+    password: 123456
 management:
   endpoints:
     web:

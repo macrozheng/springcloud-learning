@@ -36,7 +36,7 @@ spring:
     database: 0
     port: 6379
     host: localhost
-    password:
+    password: 123456
 secure:
   ignore:
     urls: #配置白名单路径
