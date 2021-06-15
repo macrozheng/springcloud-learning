@@ -1,0 +1,16 @@
+server:
+  port: 8301
+spring:
+  application:
+    name: zookeeper-ribbon-service
+  cloud:
+    zookeeper:
+      # zookeeper连接地址
+      connect-string: localhost:2181
+      discovery:
+        # 作为服务注册
+        register: true
+        # 注册时使用IP地址而不是hostname
+        prefer-ip-address: true
+service-url:
+  user-service: http://zookeeper-user-service
