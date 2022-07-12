@@ -23,11 +23,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
+            <version>${spring-cloud-starter-oauth2.version}</version>
         </dependency>
         <dependency>
             <groupId>com.nimbusds</groupId>
             <artifactId>nimbus-jose-jwt</artifactId>
-            <version>8.16</version>
+            <version>${nimbus-jose-jwt.version}</version>
         </dependency>
         <!-- redis -->
         <dependency>
