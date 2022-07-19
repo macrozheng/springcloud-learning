@@ -5,6 +5,9 @@ spring:
     active: dev
   application:
     name: micro-knife4j-order
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
   cloud:
     nacos:
       discovery:
