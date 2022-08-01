@@ -1,0 +1,32 @@
+server:
+  port: 8308
+spring:
+  application:
+    name: nacos-loadbalancer-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    loadbalancer:
+      cache: # 负载均衡缓存配置
+        enabled: true # 开启缓存
+        ttl: 5s # 设置缓存时间
+        capacity: 256 # 设置缓存大小
+      retry: # 重试配置
+        enabled: true
+        max-retries-on-same-service-instance: 1
+        max-retries-on-next-service-instance: 1
+      zone: test
+service-url:
+  nacos-user-service: http://nacos-user-service
+feign:
+  client:
+    config:
+      default: # Feign调用超时配置
+        connectTimeout: 5000
+        readTimeout: 5000
+rest:
+  template:
+    config: # RestTemplate调用超时配置
+      connectTimeout: 5000
+      readTimeout: 15000
